@@ -4,7 +4,7 @@ body, h1, h2, p, ul, li, a {
 }
 body {
   font-family: "Nunito", helvetica, arial, sans-serif;
-  color: #222222;
+  color: #a9abad;
 }
 ul {
   list-style: none;
@@ -21,7 +21,7 @@ img {
 }
 /*Super infor*/
 .superinfo-bg{
-  background: #68696b;
+  background: #a9abad;
   color: white;
 
 }
@@ -43,7 +43,8 @@ margin: 0 10px 10px 10px ;
 /*Menu*/
 
 .menu-bg {
-  background: #b5b6b9;
+  background: #a9abad;
+  margin-top: 2px;
 }
 .menu {
   max-width: 960px;
@@ -218,13 +219,14 @@ margin: 10px;
   display: block;
   margin: 20px auto;
   border: 4px solid;
-  color: #222222;
+  color: #726c6c;
   text-transform: uppercase;
   font-weight:bold ;
   font-size: 2.25em;
   padding: 15px 0;
   text-align: center;
   text-decoration: none;
+  border-radius: 20px;
 }
 @media (max-width: 800px) {
  .preco {
@@ -271,4 +273,78 @@ border-radius: 20%;
   font-size: 1.258em;
   line-height: 1.4 ;
   color: #7c7c7c;
+}
+
+/* newsleter */
+
+.newsleter {
+  background: #f7f7f7;
+  padding: 60px calc((100% - 960px) /2 );
+  display: flex;
+  flex-wrap: wrap;
+} 
+.newsleter-info {
+  flex: 1 1 260px;
+  margin: 0 10px;
+}
+.newsleter-info h1 {
+  font-size: 3em;
+  color: #a4a4a4;
+}
+.newsleter-info p {
+font-size: 1.25em;
+font-style: italic;
+max-width: 230px;
+color: #7c7c7c;
+margin-bottom: 10px;
+}
+.newsleter-form {
+  flex: 2 1 260px;
+  margin: 0 10px;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.newsleter-form input {
+  flex: 3 1 200px;
+  font-size: 1.25em;
+  color: #7c7c7c;
+  font-style: italic;
+  font-family: "Nunito", helvetica, arial, sans-serif; 
+  border: 4px solid #898b8f;
+  padding: 15px 10px;
+  margin: 0px;
+  
+}
+.newsleter-form button {
+  flex: 1 1 200px;
+  font-family: "Nunito", helvetica, arial, sans-serif;
+  font-size: 2.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #898b8f;
+  color: white;
+  margin: 0;
+ padding: 15px 10px;
+  border: 0px;
+}
+@media (max-width: 600px) {
+  .newsleter-form button {
+  font-size: 1.5em;}
+}
+
+
+
+/* footer */
+.footer {
+  height: 200px;
+  display: flex;
+  background:#898b8f ;
+  align-items: center;
+}
+.footer p {
+  flex: 1;
+  text-align: center;
+  font-size: 2.25em;
+  color: aliceblue;
 }
